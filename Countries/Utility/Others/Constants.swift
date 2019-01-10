@@ -34,4 +34,8 @@ struct CountryDetailConstant {
 
     static let kRecordSavedMessage =  "Country detail saved successfully"
     static let kRecordExistMessage =  "Record already saved"
+    
+    static let kNoRecordFound =  "No record found"
+    static let kLoading = "LOADING..."
+
 }

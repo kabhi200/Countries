@@ -76,6 +76,12 @@
 		46001DC821E67DB700F24423 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46001DC521E67DB700F24423 /* CocoaLumberjack.framework */; };
 		46001DC921E67DC400F24423 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46001DC521E67DB700F24423 /* CocoaLumberjack.framework */; };
 		46001DCA21E67DC400F24423 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46001DC521E67DB700F24423 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46BC690921E6EE52005E0A24 /* placeHolderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BC690821E6EE52005E0A24 /* placeHolderImage.png */; };
+		46BC690A21E6EE52005E0A24 /* placeHolderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BC690821E6EE52005E0A24 /* placeHolderImage.png */; };
+		46BC690B21E6EE52005E0A24 /* placeHolderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BC690821E6EE52005E0A24 /* placeHolderImage.png */; };
+		46BC690D21E6F149005E0A24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46001B6A21E67AB900F24423 /* Info.plist */; };
+		46BC690E21E6F14A005E0A24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46001B6A21E67AB900F24423 /* Info.plist */; };
+		46BC690F21E6F14B005E0A24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46001B6A21E67AB900F24423 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +150,7 @@
 		46001DBD21E67CCF00F24423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		46001DBF21E67D9700F24423 /* SVGKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SVGKit.framework; sourceTree = "<group>"; };
 		46001DC521E67DB700F24423 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		46BC690821E6EE52005E0A24 /* placeHolderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeHolderImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				46001B5A21E67AB900F24423 /* Countries */,
+				46001B6A21E67AB900F24423 /* Info.plist */,
 				46001B7221E67AB900F24423 /* CountriesTests */,
 				46001B7D21E67AB900F24423 /* CountriesUITests */,
 				46001B5921E67AB900F24423 /* Products */,
@@ -204,16 +212,12 @@
 			isa = PBXGroup;
 			children = (
 				46001BE521E67AE200F24423 /* AppDelegate */,
-				46001BD521E67AE200F24423 /* Model */,
-				46001BD021E67AE200F24423 /* TableViewCells */,
-				46001BD821E67AE200F24423 /* Utility */,
 				46001BCD21E67AE100F24423 /* ViewControllers */,
+				46001BD021E67AE200F24423 /* TableViewCells */,
 				46001BE321E67AE200F24423 /* ViewModel */,
-				46001B6521E67AB900F24423 /* Assets.xcassets */,
-				46001C8221E67C3A00F24423 /* Main.storyboard */,
-				46001B6721E67AB900F24423 /* LaunchScreen.storyboard */,
-				46001C7821E67B7500F24423 /* CountryInfo.xcdatamodeld */,
-				46001B6A21E67AB900F24423 /* Info.plist */,
+				46001BD521E67AE200F24423 /* Model */,
+				46001BD821E67AE200F24423 /* Utility */,
+				46BC690C21E6F07E005E0A24 /* Resources */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -330,6 +334,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		46BC690C21E6F07E005E0A24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46001B6521E67AB900F24423 /* Assets.xcassets */,
+				46001C8221E67C3A00F24423 /* Main.storyboard */,
+				46BC690821E6EE52005E0A24 /* placeHolderImage.png */,
+				46001B6721E67AB900F24423 /* LaunchScreen.storyboard */,
+				46001C7821E67B7500F24423 /* CountryInfo.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,10 +452,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				46001B6921E67AB900F24423 /* LaunchScreen.storyboard in Resources */,
+				46BC690921E6EE52005E0A24 /* placeHolderImage.png in Resources */,
 				46001C8321E67C3B00F24423 /* Main.storyboard in Resources */,
 				46001C4E21E67AE200F24423 /* CountryDetailTableViewCell.xib in Resources */,
 				46001B6621E67AB900F24423 /* Assets.xcassets in Resources */,
 				46001C5421E67AE200F24423 /* CountryInfoTableViewCell.xib in Resources */,
+				46BC690D21E6F149005E0A24 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46001C8421E67C3B00F24423 /* Main.storyboard in Resources */,
+				46BC690A21E6EE52005E0A24 /* placeHolderImage.png in Resources */,
 				46001C5521E67AE200F24423 /* CountryInfoTableViewCell.xib in Resources */,
+				46BC690E21E6F14A005E0A24 /* Info.plist in Resources */,
 				46001C4F21E67AE200F24423 /* CountryDetailTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +478,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46001C8521E67C3B00F24423 /* Main.storyboard in Resources */,
+				46BC690B21E6EE52005E0A24 /* placeHolderImage.png in Resources */,
 				46001C5621E67AE200F24423 /* CountryInfoTableViewCell.xib in Resources */,
+				46BC690F21E6F14B005E0A24 /* Info.plist in Resources */,
 				46001C5021E67AE200F24423 /* CountryDetailTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,7 +709,7 @@
 					"$(PROJECT_DIR)/CountryInfo",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Countries/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -711,7 +733,7 @@
 					"$(PROJECT_DIR)/CountryInfo",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Countries/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

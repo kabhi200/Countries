@@ -102,15 +102,30 @@ class SearchCountryTableViewController: UITableViewController, UISearchResultsUp
     /// - Parameter searchString: search input
     func updateSearchResultsInOnlineModeFor(_ searchString: String) {
         if searchString.count > 0 {
-            SKActivityIndicator.show("LOADING...", userInteractionStatus: false)
+            SKActivityIndicator.show(CountryDetailConstant.kLoading, userInteractionStatus: false)
         }
         CountryListViewModel.sharedInstance.sendRequestForCountryList(searchString, completion: {
-            (success) in            
+            (success) in
+            
             SKActivityIndicator.dismiss()
+            if CountryListViewModel.sharedInstance.getCountryListCount() == 0 {
+                self.showAlertWith(CountryDetailConstant.kNoRecordFound)
+            }
+
             self.tableView.reloadData()
         })
     }
     
+    /// To show alert on saving the data locally.
+    func showAlertWith(_ message: String) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: { (alert) in
+        })
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+
     // MARK: - Table view Datasource and Delegate Methods
 
     override func numberOfSections(in tableView: UITableView) -> Int {
