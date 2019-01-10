@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryInfoCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="CountryInfoTableViewCell" customModule="CountryInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OCu-Kl-tHK">
+                        <rect key="frame" x="5" y="10" width="80" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="rQE-qT-L3w"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8l-t3-KUe">
+                        <rect key="frame" x="100" y="10" width="220" height="55"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="V8l-t3-KUe" secondAttribute="bottom" constant="10" id="4WA-tL-ioC"/>
+                    <constraint firstAttribute="bottom" secondItem="OCu-Kl-tHK" secondAttribute="bottom" constant="10" id="9MD-QT-3yD"/>
+                    <constraint firstItem="V8l-t3-KUe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AEN-yB-s6t"/>
+                    <constraint firstItem="OCu-Kl-tHK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="cZQ-fQ-CyB"/>
+                    <constraint firstItem="OCu-Kl-tHK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cjF-rU-LIg"/>
+                    <constraint firstItem="V8l-t3-KUe" firstAttribute="leading" secondItem="OCu-Kl-tHK" secondAttribute="trailing" constant="15" id="uzA-mf-LOe"/>
+                    <constraint firstAttribute="trailing" secondItem="V8l-t3-KUe" secondAttribute="trailing" id="wtf-0Z-F82"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryNameLabel" destination="V8l-t3-KUe" id="itB-QP-DVr"/>
+                <outlet property="flagImageView" destination="OCu-Kl-tHK" id="G4F-St-2gu"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="132"/>
+        </tableViewCell>
+    </objects>
+</document>

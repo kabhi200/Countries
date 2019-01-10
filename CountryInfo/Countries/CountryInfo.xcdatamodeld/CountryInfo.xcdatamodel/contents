@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CountryDetail" representedClassName=".CountryDetail" syncable="YES">
+        <attribute name="countryCallingCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCapitalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCurrencies" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryLanguages" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryRegion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countrySubRegion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTimeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flagImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CountryDetail" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>
