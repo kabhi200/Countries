@@ -35,11 +35,9 @@ extension UIImageView {
                 let image = anSVGImage.uiImage
                 else { return }
             DispatchQueue.main.async() {
-//                imageCache.setObject(image, forKey: link as NSString)
                 self.image = image
 
             }
-            }.resume()
-
+        }.resume()
     }
 }

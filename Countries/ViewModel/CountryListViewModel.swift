@@ -41,7 +41,6 @@ class CountryListViewModel: NSObject {
         NetworkHandler.sharedInstance.sendRequestToFetchCountryListFor(searchString) {
             (success, jsonData) in
             
-
             if success {
                 
                 for responseDict in jsonData{
@@ -175,7 +174,6 @@ class CountryListViewModel: NSObject {
         
     }
 
-
     /// To update the country list in offline mode.
     ///
     /// - Parameter completion: return true if the data is found, else false
@@ -210,7 +208,6 @@ class CountryListViewModel: NSObject {
         }
         return false
     }
-
     
     /// To search the country from the offline storage based on the user input
     ///

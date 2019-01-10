@@ -137,17 +137,9 @@ class SearchCountryTableViewController: UITableViewController, UISearchResultsUp
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryInfoCellIdentifier", for: indexPath) as! CountryInfoTableViewCell
         cell.updateUIfor(indexPath.row)
-        return cell
-
-//        let countryInfo: CountryInfo = CountryListViewModel.sharedInstance.getCountryInfoFor(indexPath.row)
-//        cell.imageView?.downloadImageFrom(countryInfo.flagImageUrl)
-//        cell.textLabel?.text = countryInfo.countryName
         return cell
     }
 

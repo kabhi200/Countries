@@ -12,7 +12,6 @@ import SystemConfiguration
 
 class NetworkManager: NSObject {
 
-    
     /// To find if the network is available
     ///
     /// - Returns: true if the network is available, else false
@@ -40,5 +39,4 @@ class NetworkManager: NSObject {
         
         return (isReachable && !needsConnection)
     }
-
 }

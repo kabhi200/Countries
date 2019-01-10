@@ -12,8 +12,6 @@ import UIKit
 typealias CountryInfo = (flagImageUrl: String, countryName: String)
 typealias CountryDetailInfo = (headerInfo: String, detailInfo: String)
 
-//typealias CountryDetailInfo = (flagImageUrl: String, countryName: String, countryCapitalName: String, countryCallingCode: String, countryRegion: String, countrySubRegion: String, countryTimeZone: String, countryCurrencies: String, countryLanguages: String)
-
 let countryListUrl = "https://restcountries.eu/rest/v2/name/"
 
 struct CountryDetailConstant {

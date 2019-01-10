@@ -13,7 +13,6 @@ class NetworkHandler: NSObject {
     static let sharedInstance = NetworkHandler()
     private override init() { }
 
-
     /// To send the request to fetch the country records based on user input
     ///
     /// - Parameters:
@@ -41,17 +40,6 @@ class NetworkHandler: NSObject {
                     completion(false, [])
                 }
             }
-//            guard let data = data else {
-//                completion(false, [])
-//                return
-//            }
-//            guard let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) else {
-//                completion(false, [])
-//                return
-//            }
-            
-//            print(json)
-//            completion(true, json as! Array)
         })
         task.resume()
     }
