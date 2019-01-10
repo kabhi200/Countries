@@ -13,7 +13,7 @@
         <!--Search Country Table View Controller-->
         <scene sceneID="GRs-Ov-HIl">
             <objects>
-                <tableViewController storyboardIdentifier="SearchCountryTableViewController" id="VoZ-1O-JoZ" customClass="SearchCountryTableViewController" customModule="CountryInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchCountryTableViewController" id="VoZ-1O-JoZ" customClass="SearchCountryTableViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gga-8Q-qz2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
         <!--Country Detail View Controller-->
         <scene sceneID="Aui-Q8-fLG">
             <objects>
-                <viewController storyboardIdentifier="CountryDetailViewController" id="Ilj-NZ-Koo" customClass="CountryDetailViewController" customModule="CountryInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountryDetailViewController" id="Ilj-NZ-Koo" customClass="CountryDetailViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W08-Ye-qBM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
                                     <outlet property="delegate" destination="Ilj-NZ-Koo" id="nKz-OR-PeD"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-Wp-4W0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolderImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-Wp-4W0">
                                 <rect key="frame" x="67.5" y="40" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Luw-Dn-F3K"/>
@@ -129,4 +129,7 @@
             <point key="canvasLocation" x="717.60000000000002" y="99.400299850074973"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeHolderImage.png" width="1600" height="1600"/>
+    </resources>
 </document>
